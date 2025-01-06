@@ -8,18 +8,22 @@ public class Producto {
     private double precio;
     private int stock;
     private boolean activo;
+    private String codBarra;
 
     //constructores
     public Producto() {
     }
-    public Producto(int id, String nombre, String descripcion, double precio, int stock, boolean activo) {
+
+    public Producto(int id, String nombre, String descripcion, double precio, int stock, boolean activo, String codBarra) {
         this.id = id;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.stock = stock;
         this.activo = activo;
+        this.codBarra = codBarra;
     }
+    
 
     //getters y setters
     public int getId() {
@@ -60,5 +64,15 @@ public class Producto {
         this.activo = activo;
     }
     
+    public String getCodBarra() {
+        return codBarra;
+    }
+
+    public void setCodBarra(String codBarra) {
+        this.codBarra = codBarra;
+    }
+    
     //metodos
+
+    
 }
